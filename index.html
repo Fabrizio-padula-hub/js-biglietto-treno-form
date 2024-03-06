@@ -4,24 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biglietto treno</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="container-form">
-        <div class="input-container">
-            <label>Quanti chilometri vuoi percorrere?</label>
-            <input id="user-km" type="text">
-        </div>
-        <div class="input-container">
-            <label>Quanti anni hai?</label>
-            <input id="user-age" type="text">
-        </div>
-        <button class="generate"> Genera il tuo biglietto</button>
-        <button class="clear">Resetta</button>
-    </div>
+    <div class="wrapper">
+        <header>
+            <h3>Calcola il prezzo del tuo biglietto</h3>
+        </header>
+        <main>
+            <div id="container-form" class="card-big debug">
+                <div class="input-container">
+                    <div>
+                        <label>Quanti chilometri vuoi percorrere?</label>
+                    </div>
+                    <input id="user-km" type="text">
+                </div>
+                <div class="input-container">
+                    <div>
+                        <label>Quanti anni hai?</label>
+                    </div>
+                    <input id="user-age" type="text">
+                </div>
+                <button class="generate btn"> Genera il tuo biglietto</button>
+                <button class="clear btn">Resetta</button>
+            </div>
 
-    <div class="message">
-        
+            <div class="card-smal debug">
+                <h5>Dettaglio Passeggeri</h5>
+                <div class="message">
+                    
+                </div>
+            </div>
+        </main>
     </div>
 
     

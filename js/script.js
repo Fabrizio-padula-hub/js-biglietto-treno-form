@@ -53,7 +53,7 @@ resetButton.addEventListener('click', function() {
     const userAge = parseInt(document.querySelector('#user-age').value = '');
     const userMessage = document.querySelector('.message');
     userMessage.innerHTML = '';
-
+ 
 });
 
 
