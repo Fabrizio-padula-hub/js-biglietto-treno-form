@@ -15,14 +15,20 @@
             <h3>Calcola il prezzo del tuo biglietto</h3>
         </header>
         <main>
-            <div id="container-form" class="card-big debug">
-                <div class="input-container">
+            <div id="container-form" class="card card-big">
+                <div class="input-container card-input">
                     <div>
-                        <label>Quanti chilometri vuoi percorrere?</label>
+                        <label>Nome</label>
+                    </div>
+                    <input class="user-name" type="text">
+                </div>
+                <div class="input-container card-input">
+                    <div>
+                        <label>Chilometri da percorrere</label>
                     </div>
                     <input id="user-km" type="text">
                 </div>
-                <div class="input-container">
+                <div class="input-container card-input">
                     <div>
                         <label>Quanti anni hai?</label>
                     </div>
@@ -32,11 +38,11 @@
                 <button class="clear btn">Resetta</button>
             </div>
 
-            <div class="card-smal debug">
+            <div class="card card-smal">
                 <h5>Dettaglio Passeggeri</h5>
-                <div class="message">
-                    
-                </div>
+                <div class="greeting margin-b"></div>
+                <div class="km-routes margin-b"></div>
+                <div class="message-price margin-b"></div>
             </div>
         </main>
     </div>

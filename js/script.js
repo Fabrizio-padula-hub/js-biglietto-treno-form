@@ -14,12 +14,13 @@ const generateButton = document.querySelector('.generate');
 generateButton.addEventListener('click', function() {
     console.log(generateButton);
 
-    // prendere i valori dei Km e dell'età
+    // prendere i valori del nome Km e dell'età
+    const userName = document.querySelector('.user-name').value;
     const userKm = parseInt(document.querySelector('#user-km').value);
     const userAge = parseInt(document.querySelector('#user-age').value);
+    console.log('nome', userName);
     console.log('km', userKm);
     console.log('età', userAge);
-
     // calcolare il prezzo totale
     const priceTicket = parseFloat(userKm * 0.21);
     console.log('prezzo biglietto', priceTicket);
@@ -41,17 +42,22 @@ generateButton.addEventListener('click', function() {
 
 
     // stampare per l'user
-    const userMessage = document.querySelector('.message');
-    userMessage.innerHTML = `Il prezzo del tuo biglietto è di: ${finalPrice.toFixed(2)} euro`;
-    console.log(userMessage);
+    const messageName = document.querySelector('.greeting');
+    messageName.innerHTML = `Ciao ${userName}`;
+    const userMessage = document.querySelector('.message-price');
+    userMessage.innerHTML = `Il costo del tuo biglietto è di: ${finalPrice.toFixed(2)} euro`;
+    const messageKm = document.querySelector('.km-routes');
+    messageKm.innerHTML = `Devi percorrere ${userKm} Km`;
+    console.log(messageKm)
 });
 
 // quando l'utente clicca sul bottone 'resetta' dobbiamo togliere i valori
 const resetButton = document.querySelector('.clear');
 resetButton.addEventListener('click', function() {
+    const userName = document.querySelector('.user-name').value = '';
     const userKm = parseInt(document.querySelector('#user-km').value = '');
     const userAge = parseInt(document.querySelector('#user-age').value = '');
-    const userMessage = document.querySelector('.message');
+    const userMessage = document.querySelector('.message-price');
     userMessage.innerHTML = '';
  
 });
